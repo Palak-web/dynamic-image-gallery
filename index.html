@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Creative <span>Gallery</span></h1>
+        <p>Explore stunning visuals across various categories.</p>
+    </header>
+
+    <main class="gallery-container">
+        <nav class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+        </nav>
+
+        <div class="gallery-grid" id="gallery-grid">
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" id="close-lightbox" aria-label="Close Lightbox">&times;</span>
+        <button class="nav-btn prev-btn" id="prev-btn" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image" id="lightbox-img">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-caption-title"></h3>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+        <button class="nav-btn next-btn" id="next-btn" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
